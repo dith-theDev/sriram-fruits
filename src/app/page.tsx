@@ -44,8 +44,22 @@ export default function Home() {
                 The Sacred Ruby of <br/><span className="italic font-normal">Sriram Fruits.</span>
               </h1>
               <p className="text-[18px] leading-[28px] text-on-surface-variant max-w-2xl font-sans">
-                Cultivating excellence in the spiritual heart of India. We bridge the gap between traditional agricultural heritage and elite global logistics.
+                Second-generation pomegranate specialists with 25+ years of expertise. Unlike 90% of fruit sellers who rely on commission-based agents, we handle everything directly from field to your doorstep.
               </p>
+              <div className="flex flex-wrap gap-xs pt-sm pb-base">
+                <span className="inline-flex items-center gap-xs px-sm py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[13px] font-semibold">
+                  <span className="material-symbols-outlined text-[16px] leading-none">eco</span>
+                  100% Chemical-Free
+                </span>
+                <span className="inline-flex items-center gap-xs px-sm py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[13px] font-semibold">
+                  <span className="material-symbols-outlined text-[16px] leading-none">water_drop_off</span>
+                  Zero Preservatives
+                </span>
+                <span className="inline-flex items-center gap-xs px-sm py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[13px] font-semibold">
+                  <span className="material-symbols-outlined text-[16px] leading-none">local_shipping</span>
+                  Daily Fresh Harvest
+                </span>
+              </div>
               <div className="flex gap-md pt-base">
                 <button className="bg-primary-container text-white px-lg py-md rounded-xl font-label-md text-label-md hover:opacity-90 transition-opacity">EXPLORE OUR HARVEST</button>
                 <button className="border border-tertiary text-tertiary px-lg py-md rounded-xl font-label-md text-label-md hover:bg-tertiary/5 transition-colors">OUR LEGACY</button>
@@ -67,6 +81,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why We're Different - Direct Field Sourcing Banner */}
+      <section className="py-lg bg-gradient-to-r from-primary via-primary-container to-primary">
+        <AnimatedSection animation="fade" delay={100}>
+          <div className="max-w-container-max mx-auto px-gutter">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-lg border border-white/20 shadow-2xl">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-md items-center">
+                <div className="md:col-span-8 space-y-sm">
+                  <div className="flex items-center gap-xs mb-xs">
+                    <span className="material-symbols-outlined text-white text-[28px]">verified</span>
+                    <span className="text-white font-label-md text-label-md tracking-wider">THE SRIRAM DIFFERENCE</span>
+                  </div>
+                  <h3 className="text-white font-display-md text-[32px] leading-tight">
+                    No Middlemen. No Agents. <span className="italic font-normal">Just Pure Quality.</span>
+                  </h3>
+                  <p className="text-white/90 font-body-md text-[17px] leading-[26px] max-w-3xl">
+                    While 90% of fruit sellers rely on commission-based agents who mix quality and harvest in bulk, we personally visit every field. Our team inspects, harvests, and packs directly at source - ensuring zero compromise on quality, size, or freshness.
+                  </p>
+                </div>
+                <div className="md:col-span-4 flex justify-center">
+                  <div className="bg-white/20 backdrop-blur rounded-xl p-md text-center border border-white/30">
+                    <div className="text-[48px] font-bold text-white leading-none mb-xs">25+</div>
+                    <div className="text-white/90 font-label-md text-[14px] leading-tight mb-xs">Years Experience</div>
+                    <div className="text-white/80 text-[13px] leading-tight">Second Generation<br/>Pomegranate Specialists</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+      </section>
+
       {/* The Heart of Cultivation - Bento Grid */}
       <section className="py-xl bg-surface-container-low" id="cultivation">
         <div className="max-w-container-max mx-auto px-gutter">
@@ -74,7 +119,7 @@ export default function Home() {
             <div className="text-center mb-lg">
               <h2 className="font-headline-md text-headline-md text-primary mb-xs">The Heart of Cultivation</h2>
               <div className="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
-              <p className="mt-md text-on-surface-variant max-w-2xl mx-auto font-body-md">Our orchards are managed with scientific precision and ancestral wisdom, ensuring every fruit carries the essence of Tirupati&apos;s rich soil.</p>
+              <p className="mt-md text-on-surface-variant max-w-3xl mx-auto font-body-md">We visit pomegranate fields directly - no local agents, no quality mixing. Our team harvests and packages at source with premium cotton boxes and protective paper cuttings. 365-day continuous supply chain ensures year-round availability.</p>
             </div>
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-md h-auto md:h-[600px]">
@@ -103,8 +148,8 @@ export default function Home() {
                   ></div>
                   <div className="absolute inset-0 bg-gradient-to-r from-tertiary/90 via-tertiary/40 to-transparent"></div>
                   <div className="absolute inset-y-0 left-0 p-md flex flex-col justify-center max-w-[200px]">
-                    <h4 className="text-white font-headline-sm text-[20px]">Soil Analysis</h4>
-                    <p className="text-white/70 font-caption mt-xs">Real-time mineral tracking for perfect pH balance.</p>
+                    <h4 className="text-white font-headline-sm text-[20px]">Direct Field Inspection</h4>
+                    <p className="text-white/70 font-caption mt-xs">Our team personally visits every orchard. No agents, no quality mixing.</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -152,8 +197,8 @@ export default function Home() {
                 <div className="text-primary mb-md">
                   <span className="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform block">history</span>
                 </div>
-                <div className="text-headline-sm text-primary font-bold leading-none">20+ Years</div>
-                <div className="text-on-surface-variant font-label-md mt-xs normal-case">of Experience</div>
+                <div className="text-headline-sm text-primary font-bold leading-none">25+ Years</div>
+                <div className="text-on-surface-variant font-label-md mt-xs normal-case">Second Generation Business</div>
               </div>
               <div className="p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
                 <div className="text-primary mb-md">
