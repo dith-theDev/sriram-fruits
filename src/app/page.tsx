@@ -1,13 +1,20 @@
+"use client";
+
 import { Logo } from "@/components/Logo";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { useState } from "react";
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <>
       {/* TopAppBar */}
       <nav className="fixed top-0 w-full z-50 bg-[#f5ebd9]/95 backdrop-blur-md border-b border-[#b8956a]/20">
         <div className="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
           <Logo />
+
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-lg">
             <a className="font-label-md text-label-md text-primary font-bold border-b-2 border-primary" href="#heritage">HERITAGE</a>
             <a className="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#cultivation">CULTIVATION</a>
@@ -21,7 +28,62 @@ export default function Home() {
               CALL NOW
             </a>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2 text-primary"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-[32px]">
+              {mobileMenuOpen ? 'close' : 'menu'}
+            </span>
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-[#f5ebd9] border-t border-[#b8956a]/20">
+            <div className="flex flex-col px-gutter py-md space-y-sm">
+              <a
+                className="font-label-md text-label-md text-primary font-bold py-sm border-b border-outline-variant/30"
+                href="#heritage"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                HERITAGE
+              </a>
+              <a
+                className="font-label-md text-label-md text-on-surface-variant py-sm border-b border-outline-variant/30"
+                href="#cultivation"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                CULTIVATION
+              </a>
+              <a
+                className="font-label-md text-label-md text-on-surface-variant py-sm border-b border-outline-variant/30"
+                href="#grading"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                GRADING
+              </a>
+              <a
+                className="font-label-md text-label-md text-on-surface-variant py-sm border-b border-outline-variant/30"
+                href="#logistics"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                LOGISTICS
+              </a>
+              <a
+                href="tel:+918897635459"
+                className="mt-sm px-md py-md bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg flex items-center justify-center gap-xs"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="material-symbols-outlined text-[18px] leading-none">call</span>
+                CALL NOW
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -40,10 +102,10 @@ export default function Home() {
                 <span className="material-symbols-outlined text-[18px] leading-none">verified</span>
                 <span className="font-label-md text-label-md leading-none">TIRUPATI&apos;S FINEST HARVEST</span>
               </div>
-              <h1 className="font-display-lg text-display-lg text-primary leading-tight">
+              <h1 className="font-display-lg text-display-lg text-primary leading-tight font-extrabold drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)]">
                 The Sacred Ruby of <br/><span className="italic font-normal">Sriram Fruits.</span>
               </h1>
-              <p className="text-[18px] leading-[28px] text-on-surface-variant max-w-2xl font-sans">
+              <p className="text-[18px] leading-[28px] text-on-surface-variant font-bold max-w-2xl font-sans drop-shadow-[0_2px_8px_rgba(255,255,255,0.9)]">
                 Second-generation pomegranate specialists with 25+ years of expertise. Unlike 90% of fruit sellers who rely on commission-based agents, we handle everything directly from field to your doorstep.
               </p>
               <div className="flex flex-wrap gap-xs pt-sm pb-base">
@@ -62,7 +124,7 @@ export default function Home() {
               </div>
               <div className="flex gap-md pt-base">
                 <button className="bg-primary-container text-white px-lg py-md rounded-xl font-label-md text-label-md hover:opacity-90 transition-opacity">EXPLORE OUR HARVEST</button>
-                <button className="border border-tertiary text-tertiary px-lg py-md rounded-xl font-label-md text-label-md hover:bg-tertiary/5 transition-colors">OUR LEGACY</button>
+                <button className="border-2 border-tertiary bg-white text-tertiary px-lg py-md rounded-xl font-label-md text-label-md font-bold hover:bg-tertiary hover:text-white transition-all shadow-lg">OUR LEGACY</button>
               </div>
             </div>
           </AnimatedSection>
@@ -82,32 +144,32 @@ export default function Home() {
       </section>
 
       {/* Why We're Different - Direct Field Sourcing Banner */}
-      <section className="py-lg bg-gradient-to-br from-amber-600 via-yellow-600 to-amber-700 relative overflow-hidden">
+      <section className="py-lg bg-gradient-to-br from-[#6B8E23] via-[#7BA428] to-[#556B2F] relative overflow-hidden">
         {/* Decorative pattern overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.08)_0%,transparent_50%)]"></div>
 
         <AnimatedSection animation="fade" delay={100}>
           <div className="max-w-container-max mx-auto px-gutter relative z-10">
-            <div className="bg-gradient-to-br from-amber-800/30 to-yellow-900/30 backdrop-blur-md rounded-2xl p-lg border border-amber-300/30 shadow-2xl">
+            <div className="bg-gradient-to-br from-[#556B2F]/40 to-[#3D5016]/40 backdrop-blur-md rounded-2xl p-lg border border-[#9ACD32]/30 shadow-2xl">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-md items-center">
                 <div className="md:col-span-8 space-y-sm">
                   <div className="flex items-center gap-xs mb-xs">
-                    <span className="material-symbols-outlined text-amber-100 text-[28px]">verified</span>
-                    <span className="text-amber-100 font-label-md text-label-md tracking-wider">THE SRIRAM DIFFERENCE</span>
+                    <span className="material-symbols-outlined text-lime-100 text-[28px]">verified</span>
+                    <span className="text-lime-100 font-label-md text-label-md tracking-wider">THE SRIRAM DIFFERENCE</span>
                   </div>
                   <h3 className="text-white font-display-md text-[32px] leading-tight drop-shadow-md">
-                    No Middlemen. No Agents. <span className="italic font-normal text-amber-100">Just Pure Quality.</span>
+                    No Middlemen. No Agents. <span className="italic font-normal text-lime-100">Just Pure Quality.</span>
                   </h3>
-                  <p className="text-amber-50 font-body-md text-[17px] leading-[26px] max-w-3xl drop-shadow-sm">
+                  <p className="text-lime-50 font-body-md text-[17px] leading-[26px] max-w-3xl drop-shadow-sm">
                     While 90% of fruit sellers rely on commission-based agents who mix quality and harvest in bulk, we personally visit every field. Our team inspects, harvests, and packs directly at source - ensuring zero compromise on quality, size, or freshness.
                   </p>
                 </div>
                 <div className="md:col-span-4 flex justify-center">
-                  <div className="bg-white/20 backdrop-blur rounded-xl p-md text-center border border-amber-300/40 shadow-lg">
+                  <div className="bg-white/20 backdrop-blur rounded-xl p-md text-center border border-[#9ACD32]/40 shadow-lg">
                     <div className="text-[48px] font-bold text-white leading-none mb-xs drop-shadow-md">25+</div>
-                    <div className="text-amber-100 font-label-md text-[14px] leading-tight mb-xs font-semibold">Years Experience</div>
-                    <div className="text-amber-50 text-[13px] leading-tight">Second Generation<br/>Pomegranate Specialists</div>
+                    <div className="text-lime-100 font-label-md text-[14px] leading-tight mb-xs font-semibold">Years Experience</div>
+                    <div className="text-lime-50 text-[13px] leading-tight">Second Generation<br/>Pomegranate Specialists</div>
                   </div>
                 </div>
               </div>
@@ -134,11 +196,11 @@ export default function Home() {
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                   style={{backgroundImage: "url('/images/orchard-main.jpg')"}}
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
                 <div className="absolute bottom-0 p-lg w-full">
-                  <span className="text-primary-fixed font-label-md">01. SUSTAINABLE FARMING</span>
-                  <h3 className="text-white font-headline-sm mt-xs">Precision Orchard Management</h3>
-                  <p className="text-white/80 font-body-md mt-sm max-w-xl">Using state-of-the-art drip irrigation and organic nutrient management to yield the densest nutrient profiles.</p>
+                  <span className="text-yellow-300 font-label-md font-bold tracking-wide drop-shadow-lg">01. SUSTAINABLE FARMING</span>
+                  <h3 className="text-white font-headline-sm font-bold mt-xs drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">Precision Orchard Management</h3>
+                  <p className="text-white font-body-md font-semibold mt-sm max-w-xl drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Using state-of-the-art drip irrigation and organic nutrient management to yield the densest nutrient profiles.</p>
                 </div>
               </div>
             </AnimatedSection>
@@ -150,10 +212,10 @@ export default function Home() {
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                     style={{backgroundImage: "url('/images/soil-analysis.jpg')"}}
                   ></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-tertiary/90 via-tertiary/40 to-transparent"></div>
-                  <div className="absolute inset-y-0 left-0 p-md flex flex-col justify-center max-w-[200px]">
-                    <h4 className="text-white font-headline-sm text-[20px]">Direct Field Inspection</h4>
-                    <p className="text-white/70 font-caption mt-xs">Our team personally visits every orchard. No agents, no quality mixing.</p>
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+                  <div className="absolute inset-y-0 left-0 p-md flex flex-col justify-center max-w-[240px]">
+                    <h4 className="text-white font-headline-sm text-[20px] font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">Direct Field Inspection</h4>
+                    <p className="text-white font-caption font-semibold mt-xs drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Our team personally visits every orchard. No agents, no quality mixing.</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -163,10 +225,10 @@ export default function Home() {
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                     style={{backgroundImage: "url('/images/hand-pruned.jpg')"}}
                   ></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/40 to-transparent"></div>
-                  <div className="absolute inset-y-0 left-0 p-md flex flex-col justify-center max-w-[200px]">
-                    <h4 className="text-white font-headline-sm text-[20px]">Hand-Pruned</h4>
-                    <p className="text-white/70 font-caption mt-xs">Each tree is manually tended by third-generation farmers.</p>
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+                  <div className="absolute inset-y-0 left-0 p-md flex flex-col justify-center max-w-[240px]">
+                    <h4 className="text-white font-headline-sm text-[20px] font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">Hand-Pruned</h4>
+                    <p className="text-white font-caption font-semibold mt-xs drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Each tree is manually tended by third-generation farmers.</p>
                   </div>
                 </div>
               </AnimatedSection>
