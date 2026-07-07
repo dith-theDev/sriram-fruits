@@ -105,7 +105,7 @@ export default function Home() {
               <h1 className="text-[28px] md:text-display-lg text-primary leading-tight font-extrabold drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)]">
                 The Sacred Ruby of <br/><span className="italic font-normal">Sriram Fruits.</span>
               </h1>
-              <p className="text-[15px] md:text-[18px] leading-[24px] md:leading-[28px] text-on-surface font-extrabold max-w-2xl font-sans bg-white/90 backdrop-blur-sm p-sm md:p-md rounded-xl shadow-lg">
+              <p className="text-[15px] md:text-[18px] leading-[24px] md:leading-[28px] text-primary font-extrabold max-w-2xl font-sans drop-shadow-[0_3px_10px_rgba(255,255,255,1)] [text-shadow:_2px_2px_4px_rgb(255_255_255_/_1)]">
                 Second-generation pomegranate specialists with 25+ years of expertise. Unlike 90% of fruit sellers who rely on commission-based agents, we handle everything directly from field to your doorstep.
               </p>
               <div className="flex flex-wrap gap-xs pt-sm pb-sm md:pb-base">
