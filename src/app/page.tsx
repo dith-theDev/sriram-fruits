@@ -82,28 +82,32 @@ export default function Home() {
       </section>
 
       {/* Why We're Different - Direct Field Sourcing Banner */}
-      <section className="py-lg bg-gradient-to-r from-primary via-primary-container to-primary">
+      <section className="py-lg bg-gradient-to-br from-amber-600 via-yellow-600 to-amber-700 relative overflow-hidden">
+        {/* Decorative pattern overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.08)_0%,transparent_50%)]"></div>
+
         <AnimatedSection animation="fade" delay={100}>
-          <div className="max-w-container-max mx-auto px-gutter">
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-lg border border-white/20 shadow-2xl">
+          <div className="max-w-container-max mx-auto px-gutter relative z-10">
+            <div className="bg-gradient-to-br from-amber-800/30 to-yellow-900/30 backdrop-blur-md rounded-2xl p-lg border border-amber-300/30 shadow-2xl">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-md items-center">
                 <div className="md:col-span-8 space-y-sm">
                   <div className="flex items-center gap-xs mb-xs">
-                    <span className="material-symbols-outlined text-white text-[28px]">verified</span>
-                    <span className="text-white font-label-md text-label-md tracking-wider">THE SRIRAM DIFFERENCE</span>
+                    <span className="material-symbols-outlined text-amber-100 text-[28px]">verified</span>
+                    <span className="text-amber-100 font-label-md text-label-md tracking-wider">THE SRIRAM DIFFERENCE</span>
                   </div>
-                  <h3 className="text-white font-display-md text-[32px] leading-tight">
-                    No Middlemen. No Agents. <span className="italic font-normal">Just Pure Quality.</span>
+                  <h3 className="text-white font-display-md text-[32px] leading-tight drop-shadow-md">
+                    No Middlemen. No Agents. <span className="italic font-normal text-amber-100">Just Pure Quality.</span>
                   </h3>
-                  <p className="text-white/90 font-body-md text-[17px] leading-[26px] max-w-3xl">
+                  <p className="text-amber-50 font-body-md text-[17px] leading-[26px] max-w-3xl drop-shadow-sm">
                     While 90% of fruit sellers rely on commission-based agents who mix quality and harvest in bulk, we personally visit every field. Our team inspects, harvests, and packs directly at source - ensuring zero compromise on quality, size, or freshness.
                   </p>
                 </div>
                 <div className="md:col-span-4 flex justify-center">
-                  <div className="bg-white/20 backdrop-blur rounded-xl p-md text-center border border-white/30">
-                    <div className="text-[48px] font-bold text-white leading-none mb-xs">25+</div>
-                    <div className="text-white/90 font-label-md text-[14px] leading-tight mb-xs">Years Experience</div>
-                    <div className="text-white/80 text-[13px] leading-tight">Second Generation<br/>Pomegranate Specialists</div>
+                  <div className="bg-white/20 backdrop-blur rounded-xl p-md text-center border border-amber-300/40 shadow-lg">
+                    <div className="text-[48px] font-bold text-white leading-none mb-xs drop-shadow-md">25+</div>
+                    <div className="text-amber-100 font-label-md text-[14px] leading-tight mb-xs font-semibold">Years Experience</div>
+                    <div className="text-amber-50 text-[13px] leading-tight">Second Generation<br/>Pomegranate Specialists</div>
                   </div>
                 </div>
               </div>
