@@ -97,34 +97,34 @@ export default function Home() {
         </div>
         <div className="relative z-20 max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
           <AnimatedSection animation="slide-up" delay={100}>
-            <div className="space-y-md">
+            <div className="space-y-sm md:space-y-md">
               <div className="inline-flex items-center gap-xs px-sm py-1.5 bg-tertiary/10 text-tertiary rounded-full border border-tertiary/20">
-                <span className="material-symbols-outlined text-[18px] leading-none">verified</span>
-                <span className="font-label-md text-label-md leading-none">TIRUPATI&apos;S FINEST HARVEST</span>
+                <span className="material-symbols-outlined text-[16px] md:text-[18px] leading-none">verified</span>
+                <span className="font-label-md text-[11px] md:text-label-md leading-none">TIRUPATI&apos;S FINEST HARVEST</span>
               </div>
-              <h1 className="font-display-lg text-display-lg text-primary leading-tight font-extrabold drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)]">
+              <h1 className="text-[28px] md:text-display-lg text-primary leading-tight font-extrabold drop-shadow-[0_2px_10px_rgba(255,255,255,0.8)]">
                 The Sacred Ruby of <br/><span className="italic font-normal">Sriram Fruits.</span>
               </h1>
-              <p className="text-[18px] leading-[28px] text-on-surface-variant font-bold max-w-2xl font-sans drop-shadow-[0_2px_8px_rgba(255,255,255,0.9)]">
+              <p className="text-[15px] md:text-[18px] leading-[24px] md:leading-[28px] text-on-surface-variant font-bold max-w-2xl font-sans drop-shadow-[0_2px_8px_rgba(255,255,255,0.9)]">
                 Second-generation pomegranate specialists with 25+ years of expertise. Unlike 90% of fruit sellers who rely on commission-based agents, we handle everything directly from field to your doorstep.
               </p>
-              <div className="flex flex-wrap gap-xs pt-sm pb-base">
-                <span className="inline-flex items-center gap-xs px-sm py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[13px] font-semibold">
-                  <span className="material-symbols-outlined text-[16px] leading-none">eco</span>
+              <div className="flex flex-wrap gap-xs pt-sm pb-sm md:pb-base">
+                <span className="inline-flex items-center gap-xs px-xs md:px-sm py-1 md:py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[11px] md:text-[13px] font-semibold">
+                  <span className="material-symbols-outlined text-[14px] md:text-[16px] leading-none">eco</span>
                   100% Chemical-Free
                 </span>
-                <span className="inline-flex items-center gap-xs px-sm py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[13px] font-semibold">
-                  <span className="material-symbols-outlined text-[16px] leading-none">water_drop_off</span>
+                <span className="inline-flex items-center gap-xs px-xs md:px-sm py-1 md:py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[11px] md:text-[13px] font-semibold">
+                  <span className="material-symbols-outlined text-[14px] md:text-[16px] leading-none">water_drop_off</span>
                   Zero Preservatives
                 </span>
-                <span className="inline-flex items-center gap-xs px-sm py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[13px] font-semibold">
-                  <span className="material-symbols-outlined text-[16px] leading-none">local_shipping</span>
+                <span className="inline-flex items-center gap-xs px-xs md:px-sm py-1 md:py-1.5 bg-green-50 text-green-700 rounded-full border border-green-200 text-[11px] md:text-[13px] font-semibold">
+                  <span className="material-symbols-outlined text-[14px] md:text-[16px] leading-none">local_shipping</span>
                   Daily Fresh Harvest
                 </span>
               </div>
-              <div className="flex gap-md pt-base">
-                <button className="bg-primary-container text-white px-lg py-md rounded-xl font-label-md text-label-md hover:opacity-90 transition-opacity">EXPLORE OUR HARVEST</button>
-                <button className="border-2 border-tertiary bg-white text-tertiary px-lg py-md rounded-xl font-label-md text-label-md font-bold hover:bg-tertiary hover:text-white transition-all shadow-lg">OUR LEGACY</button>
+              <div className="flex flex-col sm:flex-row gap-sm md:gap-md pt-sm md:pt-base">
+                <button className="bg-primary-container text-white px-md md:px-lg py-sm md:py-md rounded-xl text-[13px] md:text-label-md font-semibold hover:opacity-90 transition-opacity whitespace-nowrap">EXPLORE OUR HARVEST</button>
+                <button className="border-2 border-tertiary bg-white text-tertiary px-md md:px-lg py-sm md:py-md rounded-xl text-[13px] md:text-label-md font-bold hover:bg-tertiary hover:text-white transition-all shadow-lg whitespace-nowrap">OUR LEGACY</button>
               </div>
             </div>
           </AnimatedSection>
@@ -151,25 +151,25 @@ export default function Home() {
 
         <AnimatedSection animation="fade" delay={100}>
           <div className="max-w-container-max mx-auto px-gutter relative z-10">
-            <div className="bg-gradient-to-br from-[#556B2F]/40 to-[#3D5016]/40 backdrop-blur-md rounded-2xl p-lg border border-[#9ACD32]/30 shadow-2xl">
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-md items-center">
-                <div className="md:col-span-8 space-y-sm">
+            <div className="bg-gradient-to-br from-[#556B2F]/40 to-[#3D5016]/40 backdrop-blur-md rounded-xl md:rounded-2xl p-md md:p-lg border border-[#9ACD32]/30 shadow-2xl">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-sm md:gap-md items-center">
+                <div className="md:col-span-8 space-y-xs md:space-y-sm">
                   <div className="flex items-center gap-xs mb-xs">
-                    <span className="material-symbols-outlined text-lime-100 text-[28px]">verified</span>
-                    <span className="text-lime-100 font-label-md text-label-md tracking-wider">THE SRIRAM DIFFERENCE</span>
+                    <span className="material-symbols-outlined text-lime-100 text-[20px] md:text-[28px]">verified</span>
+                    <span className="text-lime-100 font-label-md text-[12px] md:text-label-md tracking-wider">THE SRIRAM DIFFERENCE</span>
                   </div>
-                  <h3 className="text-white font-display-md text-[32px] leading-tight drop-shadow-md">
+                  <h3 className="text-white font-display-md text-[20px] md:text-[32px] leading-tight drop-shadow-md">
                     No Middlemen. No Agents. <span className="italic font-normal text-lime-100">Just Pure Quality.</span>
                   </h3>
-                  <p className="text-lime-50 font-body-md text-[17px] leading-[26px] max-w-3xl drop-shadow-sm">
+                  <p className="text-lime-50 font-body-md text-[14px] md:text-[17px] leading-[22px] md:leading-[26px] max-w-3xl drop-shadow-sm">
                     While 90% of fruit sellers rely on commission-based agents who mix quality and harvest in bulk, we personally visit every field. Our team inspects, harvests, and packs directly at source - ensuring zero compromise on quality, size, or freshness.
                   </p>
                 </div>
-                <div className="md:col-span-4 flex justify-center">
-                  <div className="bg-white/20 backdrop-blur rounded-xl p-md text-center border border-[#9ACD32]/40 shadow-lg">
-                    <div className="text-[48px] font-bold text-white leading-none mb-xs drop-shadow-md">25+</div>
-                    <div className="text-lime-100 font-label-md text-[14px] leading-tight mb-xs font-semibold">Years Experience</div>
-                    <div className="text-lime-50 text-[13px] leading-tight">Second Generation<br/>Pomegranate Specialists</div>
+                <div className="md:col-span-4 flex justify-center mt-sm md:mt-0">
+                  <div className="bg-white/20 backdrop-blur rounded-xl p-sm md:p-md text-center border border-[#9ACD32]/40 shadow-lg">
+                    <div className="text-[36px] md:text-[48px] font-bold text-white leading-none mb-xs drop-shadow-md">25+</div>
+                    <div className="text-lime-100 font-label-md text-[12px] md:text-[14px] leading-tight mb-xs font-semibold">Years Experience</div>
+                    <div className="text-lime-50 text-[11px] md:text-[13px] leading-tight">Second Generation<br/>Pomegranate Specialists</div>
                   </div>
                 </div>
               </div>
@@ -258,44 +258,44 @@ export default function Home() {
               </div>
             </AnimatedSection>
             <AnimatedSection animation="slide-left" delay={200}>
-              <div className="grid grid-cols-2 gap-md">
-              <div className="p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
-                <div className="text-primary mb-md">
-                  <span className="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform block">history</span>
+              <div className="grid grid-cols-2 gap-sm md:gap-md">
+              <div className="p-sm md:p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
+                <div className="text-primary mb-sm md:mb-md">
+                  <span className="material-symbols-outlined text-[24px] md:text-[32px] group-hover:scale-110 transition-transform block">history</span>
                 </div>
-                <div className="text-headline-sm text-primary font-bold leading-none">25+ Years</div>
-                <div className="text-on-surface-variant font-label-md mt-xs normal-case">Second Generation Business</div>
+                <div className="text-[16px] md:text-headline-sm text-primary font-bold leading-none">25+ Years</div>
+                <div className="text-on-surface-variant text-[11px] md:text-label-md mt-xs normal-case">Second Generation Business</div>
               </div>
-              <div className="p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
-                <div className="text-primary mb-md">
-                  <span className="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform block">groups</span>
+              <div className="p-sm md:p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
+                <div className="text-primary mb-sm md:mb-md">
+                  <span className="material-symbols-outlined text-[24px] md:text-[32px] group-hover:scale-110 transition-transform block">groups</span>
                 </div>
-                <div className="text-headline-sm text-primary font-bold leading-none">5000+</div>
-                <div className="text-on-surface-variant font-label-md mt-xs normal-case">Happy Customers</div>
+                <div className="text-[16px] md:text-headline-sm text-primary font-bold leading-none">5000+</div>
+                <div className="text-on-surface-variant text-[11px] md:text-label-md mt-xs normal-case">Happy Customers</div>
               </div>
-              <div className="p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
-                <div className="text-primary mb-md">
-                  <span className="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform block">eco</span>
+              <div className="p-sm md:p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
+                <div className="text-primary mb-sm md:mb-md">
+                  <span className="material-symbols-outlined text-[24px] md:text-[32px] group-hover:scale-110 transition-transform block">eco</span>
                 </div>
-                <div className="text-headline-sm text-primary font-bold leading-none">500+</div>
-                <div className="text-on-surface-variant font-label-md mt-xs normal-case">Local Farmers Supported</div>
+                <div className="text-[16px] md:text-headline-sm text-primary font-bold leading-none">500+</div>
+                <div className="text-on-surface-variant text-[11px] md:text-label-md mt-xs normal-case">Local Farmers Supported</div>
               </div>
-              <div className="p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
-                <div className="text-primary mb-md">
-                  <span className="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform block">local_shipping</span>
+              <div className="p-sm md:p-lg bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors group">
+                <div className="text-primary mb-sm md:mb-md">
+                  <span className="material-symbols-outlined text-[24px] md:text-[32px] group-hover:scale-110 transition-transform block">local_shipping</span>
                 </div>
-                <div className="text-headline-sm text-primary font-bold leading-none">24-Hour</div>
-                <div className="text-on-surface-variant font-label-md mt-xs normal-case">Express Delivery</div>
+                <div className="text-[16px] md:text-headline-sm text-primary font-bold leading-none">24-Hour</div>
+                <div className="text-on-surface-variant text-[11px] md:text-label-md mt-xs normal-case">Express Delivery</div>
               </div>
-              <div className="col-span-2 p-lg bg-primary text-white rounded-xl shadow-lg flex items-center justify-between group">
+              <div className="col-span-2 p-sm md:p-lg bg-primary text-white rounded-xl shadow-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-sm group">
                 <div>
                   <div className="flex items-center gap-xs">
-                    <span className="material-symbols-outlined leading-none">support_agent</span>
-                    <span className="text-headline-sm font-bold leading-none">24/7 Dedicated Support</span>
+                    <span className="material-symbols-outlined text-[20px] md:text-[24px] leading-none">support_agent</span>
+                    <span className="text-[16px] md:text-headline-sm font-bold leading-none">24/7 Dedicated Support</span>
                   </div>
-                  <p className="text-primary-fixed text-caption mt-sm">Real-time assistance for all wholesale & export partners.</p>
+                  <p className="text-primary-fixed text-[11px] md:text-caption mt-xs md:mt-sm">Real-time assistance for all wholesale & export partners.</p>
                 </div>
-                <span className="material-symbols-outlined text-[32px] opacity-50 group-hover:opacity-100 transition-opacity">trending_up</span>
+                <span className="material-symbols-outlined text-[24px] md:text-[32px] opacity-50 group-hover:opacity-100 transition-opacity hidden sm:block">trending_up</span>
               </div>
               </div>
             </AnimatedSection>
